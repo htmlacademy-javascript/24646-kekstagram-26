@@ -7,9 +7,12 @@ const getRandomInteger = (a = 0, b = 1) => {
   return Math.floor(lower + Math.random() * (upper - lower + 1));
 };
 
-const checkStringLength = (string, max_length) => {
-  if (string.length < max_length) {
+const checkStringLength = (string, maxLength) => {
+  if (string.length < maxLength) {
     return false;
   }
   return true;
-}
+};
+
+getRandomInteger();
+checkStringLength();
